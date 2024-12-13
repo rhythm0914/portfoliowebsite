@@ -1,0 +1,487 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Social Links Styling */
+.social-link {
+    color: #FF6F61; /* Coral color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.social-link:hover {
+    color: #D74C38; /* Darker coral on hover */
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+#projects p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.projects-table th,
+.projects-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.projects-table th {
+    background-color: #FF6F61; /* Coral color */
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.projects-table td {
+    background-color: #fff;
+    font-size: 1rem;
+    color: #444;
+}
+
+.projects-table tr:nth-child(even) td {
+    background-color: #f1f1f1; /* Zebra striping effect */
+}
+
+.projects-table tr:hover td {
+    background-color: #fffbf2; /* Light hover effect */
+}
+
+.projects-table td strong {
+    color: #FF6F61; /* Coral color for project names */
+}
+
+@media (max-width: 768px) {
+    .projects-table th,
+    .projects-table td {
+        padding: 10px;
+    }
+
+    #projects h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Body Styling */
+body {
+    background-color: #f8f9fa; /* Lighter background color for a fresh feel */
+    color: #333; /* Darker text color for readability */
+    line-height: 1.6;
+}
+
+/* Centered Button Styling */
+.center-button {
+    margin: 1.5rem 0;
+}
+
+.center-button button {
+    background-color: #FF6F61; /* Softer, warm coral color */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.center-button button:hover {
+    background-color: #D74C38; /* Darker coral shade */
+    transform: scale(1.05);
+}
+
+/* Education Section */
+#education {
+    background-color: #ffffff; /* White background for clean contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#education h2 {
+    color: #FF6F61; /* Warm coral color for headings */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#education p {
+    color: #555; /* Lighter grey text for paragraph readability */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Skills & Training */
+#skills ul, #projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills li, #projects li {
+    margin-bottom: 10px;
+}
+
+#skills strong, #projects strong {
+    color: #333;
+}
+
+/* Gallery */
+#gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#gallery .gallery-image {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#gallery .gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Feedback Form */
+#feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#feedback label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#feedback input[type="text"], #feedback input[type="email"], #feedback textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#feedback .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#feedback .radio-group label {
+    font-size: 1rem;
+}
+
+#feedback textarea {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+#feedback input[type="submit"] {
+    background-color: #FF6F61; /* Softer coral color for submit button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback input[type="submit"]:hover {
+    background-color: #D74C38; /* Darker coral on hover */
+}
+
+/* Style for the radio-group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+/* Optional: Hover effect on radio labels */
+.radio-group label:hover {
+    cursor: pointer;
+    color: #FF6F61; /* Adjust color on hover */
+}
+
+/* Optional: Adding a border and padding for a nicer layout */
+.radio-group {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Section Styling */
+#personal-info {
+    padding: 2rem;
+    background-color: #fff; /* White background to contrast with the page */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 2rem 0; /* Add some space above and below */
+    animation: fadeIn 0.5s ease forwards; /* Animation for fade-in effect */
+    opacity: 0;
+    text-align: center; /* Centering the text and profile image */
+}
+
+#personal-info h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF6F61; /* Matching accent color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+#personal-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333; /* Dark text color for readability */
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 150px; /* Set size of the profile image */
+    height: 150px;
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image fits within the circular frame */
+    border: 3px solid #FF6F61; /* Optional: Border around the profile image */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f4f8; /* Lighter background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #FF6F61; /* Warm coral for hover */
+}
+
+nav .nav-links a.active {
+    background-color: #FF6F61; /* Active link background */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add styles to control the visibility of sections */
+.section {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.section.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.image-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-card button {
+    background-color: #FF6F61; /* Soft coral color */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.image-card button:hover {
+    background-color: #D74C38; /* Darker coral on hover */
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f4f8; /* Lighter background for the footer */
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Hero Header Section */
+#hero-header {
+    background-image: url('logo.png'); /* Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+#hero-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero-header .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Soft coral color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero-header .cta-button:hover {
+    background-color: #D74C38; /* Darker coral on hover */
+    transform: scale(1.05);
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-card {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.image-card:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.image-card:nth-child(even) {
+    animation-delay: 0.4s;
+}

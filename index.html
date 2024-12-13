@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personal-info">Personal Info</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills & Training</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section visible">
+        <div class="header-image" style="background-image: url('logo.png');"></div>
+        <h1>Welcome to My Portfolio Website</h1>
+        <p>Explore my work and get to know more about me.</p>
+        <div class="center-button">
+            <button>Get Started</button>
+        </div>
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="info.png" alt="Image 1">
+                <button>Personal Info</button>
+            </div>
+            <div class="image-card">
+                <img src="projects.png" alt="Image 2">
+                <button>Projects</button>
+            </div>
+            <div class="image-card">
+                <img src="gallery.png" alt="Image 3">
+                <button>Gallery</button>
+            </div>
+            <div class="image-card">
+                <img src="feedback.png" alt="Image 4">
+                <button>Feedback</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal-info" class="section">
+        <div class="header-image" style="background-image: url('logo.png');"></div>
+        <h2>Personal Information</h2> <!-- Section Title -->
+        <div class="profile-image-container">
+            <img src="profile.jpg" alt="Profile Image" class="profile-image">
+        </div>
+
+        <h2>Contact Information</h2>
+        <p>Name: Ryan Joseph L. Cañano</p>
+        <p>Profession: Game Developer</p>
+        <p>Email: <a href="mailto:rycanano@gmail.com">rycanano@gmail.com</a></p>
+
+        <h2>Description</h2>
+        <p>Passionate game developer with experience in creating and managing a private MMORPG server for Fly For Fun. Proficient in C++ and Visual Studio for game development, with a strong background in setting up and configuring servers using XAMPP and Microsoft SQL. Skilled in designing and coding functional websites, including a custom donation system with PayPal integration to enhance player experience and support in-game transactions. Committed to delivering high-quality gaming solutions and improving user engagement through innovative development practices.</p>
+
+        <h2>Social Links</h2>
+        <p>
+            <a href="https://www.facebook.com/ryan.joseph.canano.2024" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i> Facebook
+            </a> | 
+            <a href="https://github.com/rhythm0914" target="_blank" class="social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </p>
+    </section>
+
+    <section id="education" class="section">
+        <div class="header-image" style="background-image: url('education-header.jpg');"></div>
+        <h2>Education</h2> <!-- Section Title -->
+        <p>Primary School: Philippine School in Dammam</p>
+        <p>Secondary School: International Philippine School in Al-Khobar</p>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="header-image" style="background-image: url('skills-header.jpg');"></div>
+        <h2>Skills & Training</h2> <!-- Section Title -->
+        <p>I am a skilled game developer with expertise in various technologies and tools. I have hands-on experience in game development, server management, and website creation. My skills include:</p>
+        <ul>
+            <li><strong>Game Development:</strong> Proficient in C++ and Visual Studio for developing game features and managing game servers.</li>
+            <li><strong>Game Server Management:</strong> Experience with setting up and configuring servers using XAMPP, Microsoft SQL, and various server-side technologies.</li>
+            <li><strong>Web Development:</strong> Knowledge in designing and coding functional websites, including custom donation systems with PayPal integration to support in-game transactions.</li>
+            <li><strong>Problem Solving:</strong> Strong ability to troubleshoot and resolve technical issues in game systems and server infrastructure.</li>
+            <li><strong>Collaboration:</strong> Experienced in working with teams to implement game features, balance gameplay, and provide a smooth player experience.</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="header-image" style="background-image: url('projects-header.jpg');"></div>
+        <h2>Projects</h2> <!-- Section Title -->
+        <p>Throughout my career, I have worked on multiple projects that showcase my skills in game development and server management:</p>
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fly For Fun Private MMORPG Server</strong></td>
+                    <td>Created and managed a private server for the MMORPG Fly For Fun, including developing custom features and managing the game environment.</td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Donation System</strong></td>
+                    <td>Designed and implemented a PayPal-integrated donation system for an MMORPG to enhance player engagement and support in-game purchases.</td>
+                </tr>
+                <tr>
+                    <td><strong>Website Development for Gaming Communities</strong></td>
+                    <td>Developed websites for gaming communities, providing features such as player rankings, donation systems, and game event tracking.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="header-image" style="background-image: url('gallery-header.jpg');"></div>
+        <h2>Photo Gallery</h2> <!-- Section Title -->
+        <p>Here are some highlights from my projects, including screenshots of the MMORPG server, websites I've developed, and other related work:</p>
+        <div class="gallery-container">
+            <img src="wrath4.jpg" alt="Game Management" class="gallery-image">
+            <img src="wrath5.jpg" alt="Game Management" class="gallery-image">
+            <img src="wrath6.jpg" alt="Game Management" class="gallery-image">
+            <img src="wrath7.jpg" alt="Game Management" class="gallery-image">
+            <img src="wrath1.jpg" alt="Game Project 1" class="gallery-image">
+            <img src="wrath2.jpg" alt="Game Project 1" class="gallery-image">
+            <img src="wrath3.jpg" alt="Game Management" class="gallery-image">
+        </div>
+    </section>
+
+    <section id="feedback" class="section">
+        <div class="header-image" style="background-image: url('feedback-header.jpg');"></div>
+        <h2>Feedback</h2> <!-- Section Title -->
+        <p>We would love to hear your thoughts and feedback. Please fill out the form below:</p>
+        <form action="submit_feedback.php" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Feedback Type Radio Group -->
+            <div class="radio-group">
+                <label>Type of Feedback:</label>
+                <label><input type="radio" name="feedback_type" value="comment" required> Comment</label>
+                <label><input type="radio" name="feedback_type" value="suggestion"> Suggestion</label>
+                <label><input type="radio" name="feedback_type" value="question"> Question</label>
+            </div>
+
+            <label for="message">Describe Your Feedback:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share your thoughts about my portfolio" required></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ryan Joseph L. Cañano. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            function navigateTo(sectionId) {
+                sections.forEach(section => section.classList.remove('visible'));
+                document.getElementById(sectionId).classList.add('visible');
+
+                navLinks.forEach(link => link.classList.remove('active'));
+                document.querySelector(`a[href="#${sectionId}"]`).classList.add('active');
+            }
+
+            // Attach click event listeners
+            navLinks.forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault();
+                    const sectionId = event.target.getAttribute('href').substring(1);
+                    navigateTo(sectionId);
+                });
+            });
+
+            // Initial navigation
+            navigateTo('home');
+        });
+    </script>
+</body>
+</html>
